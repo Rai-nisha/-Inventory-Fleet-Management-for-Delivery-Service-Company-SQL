@@ -27,17 +27,6 @@ It manages the company’s **vehicles, drivers, warehouses, inventory, and deliv
 | **Deliveries** | Records delivery assignments and statuses. |
 | **Delivery_Items** | Links items with deliveries and quantities. |
 
-### **Schema Diagram**
-```
-Vehicles (vehicle_id) 1 --- * Drivers (assigned_vehicle_id)
-Vehicles (vehicle_id) 1 --- * Deliveries (vehicle_id)
-Drivers (driver_id) 1 --- * Deliveries (driver_id)
-Warehouses (warehouse_id) 1 --- * Inventory (warehouse_id)
-Warehouses (warehouse_id) 1 --- * Deliveries (warehouse_id)
-Deliveries (delivery_id) 1 --- * Delivery_Items (delivery_id)
-Inventory (item_id) 1 --- * Delivery_Items (item_id)
-```
-
 ---
 
 ## ⚙️ Key SQL Components
